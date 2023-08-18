@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'JDK'}
     stages {
-        satge('vcs') {
+        stage('vcs') {
             steps {
                 git url: 'https://github.com/spring-projects/spring-petclinic.git',
                     branch: 'main'
